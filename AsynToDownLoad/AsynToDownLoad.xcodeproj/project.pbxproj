@@ -19,6 +19,7 @@
 		77501E081DFD508400E48E73 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 77501E011DFD508300E48E73 /* AFURLResponseSerialization.m */; };
 		77501E091DFD508400E48E73 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77501E031DFD508300E48E73 /* AFURLSessionManager.m */; };
 		77501E0C1DFD50EF00E48E73 /* NetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 77501E0B1DFD50EF00E48E73 /* NetWorkTool.m */; };
+		77696F9A1DFD6A0B002C62BA /* AppCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77696F991DFD6A0B002C62BA /* AppCell.m */; };
 		779D0A351DFD576200888253 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779D0A321DFD576200888253 /* ViewController.m */; };
 		779D0A581DFD578B00888253 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 779D0A381DFD578B00888253 /* MKAnnotationView+WebCache.m */; };
 		779D0A591DFD578B00888253 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 779D0A3A1DFD578B00888253 /* NSData+ImageContentType.m */; };
@@ -63,6 +64,8 @@
 		77501E031DFD508300E48E73 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		77501E0A1DFD50EF00E48E73 /* NetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTool.h; sourceTree = "<group>"; };
 		77501E0B1DFD50EF00E48E73 /* NetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTool.m; sourceTree = "<group>"; };
+		77696F981DFD6A0B002C62BA /* AppCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCell.h; sourceTree = "<group>"; };
+		77696F991DFD6A0B002C62BA /* AppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCell.m; sourceTree = "<group>"; };
 		779D0A311DFD576200888253 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		779D0A321DFD576200888253 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		779D0A371DFD578B00888253 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 		779D0A341DFD576200888253 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				77696F981DFD6A0B002C62BA /* AppCell.h */,
+				77696F991DFD6A0B002C62BA /* AppCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				77501E051DFD508300E48E73 /* AFNetworkReachabilityManager.m in Sources */,
 				77501E0C1DFD50EF00E48E73 /* NetWorkTool.m in Sources */,
 				779D0A661DFD578B00888253 /* UIImageView+WebCache.m in Sources */,
+				77696F9A1DFD6A0B002C62BA /* AppCell.m in Sources */,
 				779D0A5B1DFD578B00888253 /* SDWebImageCompat.m in Sources */,
 				779D0A351DFD576200888253 /* ViewController.m in Sources */,
 				779D0A5C1DFD578B00888253 /* SDWebImageDecoder.m in Sources */,

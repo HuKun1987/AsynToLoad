@@ -19,11 +19,9 @@
         if ([result isKindOfClass:[NSArray class]])
         {
             NSArray* dataArr = (NSArray*)result;
-            
+             NSMutableArray* temp = [NSMutableArray arrayWithCapacity:1];
             [dataArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
             {
-                NSMutableArray* temp = [NSMutableArray arrayWithCapacity:1];
-                
                 if ([obj isKindOfClass:[NSDictionary class]])
                 {
                     NSDictionary* dic = (NSDictionary*)obj;
@@ -32,8 +30,8 @@
                     
                     [temp addObject:model];
                 }
-                finished(temp.copy);
             }];
+            finished(temp.copy);
         }
     }];
 }

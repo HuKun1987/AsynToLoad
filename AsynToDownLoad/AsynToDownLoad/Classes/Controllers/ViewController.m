@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AppModel.h"
 #import "NetWorkTool.h"
+#import "AppCell.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *ListTab;
 
@@ -31,7 +32,8 @@ static NSString* CellID = @"iconCellID";
     }];
     
     
-    [self.ListTab registerClass:[UITableViewCell class] forCellReuseIdentifier:CellID];
+    [self.ListTab registerClass:[AppCell class] forCellReuseIdentifier:CellID];
+    self.ListTab.rowHeight = 64;
     
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -44,7 +46,9 @@ static NSString* CellID = @"iconCellID";
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CellID forIndexPath:indexPath];
+    AppCell* cell = [tableView dequeueReusableCellWithIdentifier:CellID forIndexPath:indexPath];
+    
+    cell.model = self.iconModelList[indexPath.row];
 
     return cell;
 }
