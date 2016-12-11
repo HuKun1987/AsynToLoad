@@ -6,8 +6,19 @@
 //  Copyright © 2016年 hukun. All rights reserved.
 //
 
-#import "AFURLSessionManager.h"
+#import "AFHTTPSessionManager.h"
 
-@interface NetWorkTool : AFURLSessionManager
+typedef NS_ENUM(NSInteger, RequestType)
+{
+    AFNRequestTypeGet,
+    AFNRequestTypePost,
+};
 
+typedef void(^Complete)(id result);
+
+@interface NetWorkTool : AFHTTPSessionManager
+
++(instancetype)sharedTool;
+
+-(void)requestDataWithType:(RequestType)requestType   UrlString:(NSString*)urlStr Param:(id)param CompleteBlock:(Complete)finished;
 @end
